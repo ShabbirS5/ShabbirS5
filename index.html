@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shabbir Islam - Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <style>
         #particles-canvas {
@@ -32,6 +33,11 @@
     <nav class="navbar">
         <div class="nav-content">
             <div class="logo">Shabbir Islam</div>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -42,27 +48,36 @@
             </ul>
         </div>
     </nav>
-
     <section id="home" class="hero">
         <canvas id="hero-canvas"></canvas>
         <div class="hero-content">
+            <div class="hero-grid">
+                <div class="hero-image">
+                    <img src="./Shabbirislam.jpg" alt="Shabbir Islam">
+                </div>  
+            </div>
             <h1>Shabbir Islam</h1>
-            <h2>Software Developer</h2>
-            <p>Passionate about creating innovative web solutions and leveraging modern technologies</p>
+            <h2 class="typewriter-text">Software Developer</h2>
+            <p>Python | DevOps | code debugging and Full-Stack Developer </p>
             <div class="cta-buttons">
                 <a href="#contact" class="btn primary">Contact Me</a>
                 <a href="#projects" class="btn secondary">View Projects</a>
             </div>
         </div>
     </section>
-
     <section id="about" class="about">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
-            <div class="profile-text">
-                <p>To leverage my technical skills and passion for IT in contributing to company's and my career growth while continuously developing my expertise.</p>
+            <div class="project-card">
+                <p>I have specialize in creating innovative solutions through advanced logic development, sophisticated debugging, and  application troubleshooting. My proven track record spans multiple high-impact projects, demonstrating my exceptional ability to rapidly adapt to emerging technologies. I thrive in challenging environments that push boundaries,
+                     consistently leveraging each new obstacle as an opportunity to expand my technical expertise and deliver superior results. </p>
                 <div class="education">
                     <h3>Education</h3>
+                    <div class="edu-item">
+                        <h4>BCA with Machine learing and AI</h4>
+                        <p>University of Mysore</p>
+                        <p>2025 | pursuing</p>
+                    </div>
                     <div class="edu-item">
                         <h4>Diploma in Computer Eng. & IT Infrastructure</h4>
                         <p>NETTUR TECHNICAL TRAINING FOUNDATION</p>
@@ -80,10 +95,11 @@
 
     <section id="experience" class="experience">
         <h2 class="section-title">Work Experience</h2>
-        <div class="exp-item">
-            <h3>Web Developer</h3>
-            <h4>INDXO.AI</h4>
-            <p>Working as an IT Intern, contributing as a Junior Software Engineer (Web Developer & Code debugging).</p>
+        <div class="project-card">
+            <h3>INDXO.AI</h3>
+            <h4>Software Developer</h4>
+            <p>Python | DevOps | code debugging and Full-Stack Developer</p>
+            <p>2024-2025</p>
         </div>
     </section>
 
@@ -106,6 +122,23 @@
                 <p>Technologies: HTML, CSS, JavaScript, Bootstrap</p>
             </div>
         </div>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Honda CMMS Diagnostic Tool</h3>
+                <p>Role: Application Troubleshooting and Development</p>
+                <p>Technologies:MongoDB, Python and Django frameworks</p>
+            </div>
+            <div class="project-card">
+                <h3>Digital Checksheet | Honda DPC</h3>
+                <p>Role: Support Developer</p>
+                <p>Technologies: CI\CD pipe line MongoDB, HTML-Css-JS, Java and Python</p>
+            </div>
+            <div class="project-card">
+                <h3>CTI India</h3>
+                <p>Role: Web developer, Designer and Programmer</p>
+                <p>Technologies: HTML, CSS, JavaScript, Mongodb and Python</p>
+            </div>
+        </div>
     </section>
 
     <section id="skills" class="skills">
@@ -115,24 +148,14 @@
                 <h3>Technical Skills</h3>
                 <ul>
                     <li>Web Technology: HTML, CSS, JavaScript</li>
-                    <li>DBMS: SQL, MySQL</li>
+                    <li>DBMS: SQL, MySQL and MongoDB</li>
                     <li>Programming: C, C++, Python and Java</li>
                     <li>DevOps Tools: Jenkins, Ansible, Github</li>
-                    <li>Cloud Computing: AWS</li>
+                    <li>Cloud Computing:Basics of AWS </li>
                     <li>OS: Linux, Unix, Windows</li>
                 </ul>
             </div>
-            <div class="soft-skills">
-                <h3>Professional Skills</h3>
-                <ul>
-                    <li>Project Management</li>
-                    <li>Public Relations</li>
-                    <li>Teamwork</li>
-                    <li>Time Management</li>
-                    <li>Leadership</li>
-                    <li>Critical Thinking</li>
-                </ul>
-            </div>
+           
             <div class="certifications">
                 <h3>Certifications</h3>
                 <ul>
@@ -164,14 +187,14 @@
                 </div>
                 <div class="contact-item">
                     <i class="fab fa-linkedin"></i>
-                    <p><a href="#" target="_blank">LinkedIn Profile</a></p>
+                    <p><a href="https://www.linkedin.com/in/shabbir-islam-2180ab244/">LinkedIn Profile</a></p>
                 </div>
             </div>
         </div>
     </section>
 
     <footer>
-        <p>&copy; 2024 Shabbir Islam. All rights reserved.</p>
+        <p>&copy; 2025 Shabbir Islam. All rights reserved.</p>
     </footer>
     <script>
         const canvas = document.getElementById('particles-canvas');
@@ -465,5 +488,6 @@
         initHeroStars();
         animateHeroStars();
     </script>
+    
 </body>
 </html>
